@@ -8,7 +8,7 @@
 Tela estatica testando com Flutter Web
 </p>
 
-📌 VenTekWeb 
+📌 Flutter Portugal Web
 ------------------
 O projeto foi feito com Flutter com os amigos de Flutter Portugal 
 

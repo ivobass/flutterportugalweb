@@ -10,7 +10,7 @@ Tela estatica testando com Flutter Web
 
 📌 Flutter Portugal Web
 ------------------
-O projeto foi feito com Flutter com os amigos de Flutter Portugal 
+O projeto foi feito utilizando o Flutter, com os amigos de Flutter Portugal 
 
 
 <img src="assets/app.png" alt="page-home">

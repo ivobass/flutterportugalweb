@@ -5,7 +5,7 @@
 
 
 <p align="center">
-Tela estatica testando com Flutter Web
+Tela estatica com acesso aos links de contactos de Flutter Portugal, foi feito utlizando Flutter Web
 </p>
 
 📌 Flutter Portugal Web

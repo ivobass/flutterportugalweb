@@ -22,7 +22,7 @@ O projeto foi feito utilizando o Flutter, com os amigos de Flutter Portugal
 - Flutter Web
 - Dart
 
-<img src="assets/server.png" alt="page-home">
+
 
 
 

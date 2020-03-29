@@ -91,31 +91,46 @@ class HomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Text(
-                'Discord',
-                style: TextStyle(
-                  color: Colors.blueAccent,
-                  fontSize: 20,
+              Container(
+                width: 300,
+                height: 20,
+                child: Text(
+                  'Discord',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.blueAccent,
+                    fontSize: 20,
+                  ),
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
-              Text(
-                'Twitter',
-                style: TextStyle(
-                  color: Colors.blueAccent,
-                  fontSize: 20,
+              Container(
+                width: 300,
+                height: 20,
+                child: Text(
+                  'Twitter',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.blueAccent,
+                    fontSize: 20,
+                  ),
                 ),
               ),
               SizedBox(
                 height: 20,
               ),
-              Text(
-                'Meetup',
-                style: TextStyle(
-                  color: Colors.blueAccent,
-                  fontSize: 20,
+              Container(
+                width: 300,
+                height: 20,
+                child: Text(
+                  'Meetup',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.blueAccent,
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ],
@@ -124,12 +139,15 @@ class HomeScreen extends StatelessWidget {
             height: 10,
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            // crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Container(
+                width: 300,
+                height: 20,
                 child: Text(
                   'Chat with community.',
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: 15,
@@ -139,27 +157,31 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Text(
-                'For all and the latest news and articles.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
+              Container(
+                width: 300,
+                height: 20,
+                child: Text(
+                  'For all and the latest news and articles.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                  ),
                 ),
               ),
-              SizedBox(
-                height: 10,
-              ),
-              Text(
-                'Know when is our next event and where.',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 15,
+              Container(
+                width: 300,
+                height: 20,
+                child: Text(
+                  'Know when is our next event and where.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 15,
+                  ),
                 ),
               ),
             ],
-          ),
-          SizedBox(
-            height: 10,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -175,7 +197,10 @@ class HomeScreen extends StatelessWidget {
                   splashColor: Colors.blueAccent,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15)),
-                  child: Text("Join Chat"),
+                  child: Text(
+                    "Join Chat",
+                    textAlign: TextAlign.center,
+                  ),
                   onPressed: () async {
                     const url = 'https://discord.gg/trEcse';
                     if (await canLaunch(url)) {
@@ -199,7 +224,10 @@ class HomeScreen extends StatelessWidget {
                   splashColor: Colors.blueAccent,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15)),
-                  child: Text("Join Twitter"),
+                  child: Text(
+                    "Join Twitter",
+                    textAlign: TextAlign.center,
+                  ),
                   onPressed: () async {
                     const url = 'https://twitter.com/FlutterPortugal';
                     if (await canLaunch(url)) {
@@ -223,7 +251,10 @@ class HomeScreen extends StatelessWidget {
                   splashColor: Colors.blueAccent,
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15)),
-                  child: Text("Join Meetup "),
+                  child: Text(
+                    "Join Meetup ",
+                    textAlign: TextAlign.center,
+                  ),
                   onPressed: () async {
                     const url = 'https://www.meetup.com/pt-BR/FlutterPortugal/';
                     if (await canLaunch(url)) {

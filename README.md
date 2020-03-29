@@ -1,6 +1,54 @@
+
+<h1 align="center">
+    <img width="600" src="assets/logo.png" />
+</h1>
+
+
+<p align="center">
+Tela estatica com acesso aos links de contactos de Flutter Portugal
+
+📌 Flutter Portugal Web
+------------------
+O projeto foi feito utilizando o Flutter, com os amigos de Flutter Portugal 
+
+
+<img src="assets/app.png" alt="page-home">
+
+
+🔧 Tecnologias utilizadas:
+------------------
+
+- Flutter
+- Flutter Web
+- Dart
+
+
+
+
+
+
+💬 Fale comigo
+------------------
+[*Entre em contato comigo*](https://www.linkedin.com/in/ivo-baptista-3712144/)
+
+💬 Fale com Flutter Portugal
+
+[*Entre em contato atravez do Discord*](https://discord.gg/trEcse)
+
+
+
+
+
+
+
+*Foi feito para testes nao esta pronto falta alinhamentos e alguns detalhes.
+
+
+
+
 # flutterportugalweb
 
-A new Flutter project.
+A new Flutter Web project.
 
 ## Getting Started
 

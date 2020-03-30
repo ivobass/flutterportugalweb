@@ -184,10 +184,10 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              Center(
+              Expanded(
                 child: FlatButton(
                   color: Colors.blue,
                   textColor: Colors.white,
@@ -214,7 +214,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Center(
+              Expanded(
                 child: FlatButton(
                   color: Colors.blue,
                   textColor: Colors.white,
@@ -241,7 +241,7 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-              Center(
+              Expanded(
                 child: FlatButton(
                   color: Colors.blue,
                   textColor: Colors.white,

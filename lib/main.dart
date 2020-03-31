@@ -62,7 +62,7 @@ class HomeScreen extends StatelessWidget {
           ),
           Center(
             child: Container(
-              height: 300.0,
+              height: 280.0,
               width: 600.0,
               child: Image.network(
                   'https://secure.meetupstatic.com/photos/event/a/b/7/2/600_479443890.jpeg'),
@@ -136,7 +136,7 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 10,
+            height: 5,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -155,7 +155,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 10,
+                height: 5,
               ),
               Container(
                 width: 300,
@@ -188,81 +188,91 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Expanded(
-                child: FlatButton(
-                  color: Colors.blue,
-                  textColor: Colors.white,
-                  disabledColor: Colors.grey,
-                  disabledTextColor: Colors.black,
-                  padding: EdgeInsets.all(8.0),
-                  splashColor: Colors.blueAccent,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15)),
-                  child: Text(
-                    "Join Chat",
-                    textAlign: TextAlign.center,
+                child: Padding(
+                  padding: const EdgeInsets.all(30.0),
+                  child: FlatButton(
+                    color: Colors.blue,
+                    textColor: Colors.white,
+                    disabledColor: Colors.grey,
+                    disabledTextColor: Colors.black,
+                    padding: EdgeInsets.all(8.0),
+                    splashColor: Colors.blueAccent,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Text(
+                      "Join Chat",
+                      textAlign: TextAlign.center,
+                    ),
+                    onPressed: () async {
+                      const url = 'https://discord.gg/trEcse';
+                      if (await canLaunch(url)) {
+                        await launch(url);
+                      } else {
+                        throw 'Could not launch $url';
+                      }
+                    },
                   ),
-                  onPressed: () async {
-                    const url = 'https://discord.gg/trEcse';
-                    if (await canLaunch(url)) {
-                      await launch(url);
-                    } else {
-                      throw 'Could not launch $url';
-                    }
-                  },
+                ),
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.all(30.0),
+                  child: FlatButton(
+                    color: Colors.blue,
+                    textColor: Colors.white,
+                    disabledColor: Colors.grey,
+                    disabledTextColor: Colors.black,
+                    padding: EdgeInsets.all(8.0),
+                    splashColor: Colors.blueAccent,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Text(
+                      "Join Twitter",
+                      textAlign: TextAlign.center,
+                    ),
+                    onPressed: () async {
+                      const url = 'https://twitter.com/FlutterPortugal';
+                      if (await canLaunch(url)) {
+                        await launch(url);
+                      } else {
+                        throw 'Could not launch $url';
+                      }
+                    },
+                  ),
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
               Expanded(
-                child: FlatButton(
-                  color: Colors.blue,
-                  textColor: Colors.white,
-                  disabledColor: Colors.grey,
-                  disabledTextColor: Colors.black,
-                  padding: EdgeInsets.all(8.0),
-                  splashColor: Colors.blueAccent,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15)),
-                  child: Text(
-                    "Join Twitter",
-                    textAlign: TextAlign.center,
+                child: Padding(
+                  padding: const EdgeInsets.all(30.0),
+                  child: FlatButton(
+                    color: Colors.blue,
+                    textColor: Colors.white,
+                    disabledColor: Colors.grey,
+                    disabledTextColor: Colors.black,
+                    padding: EdgeInsets.all(8.0),
+                    splashColor: Colors.blueAccent,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15)),
+                    child: Text(
+                      "Join Meetup ",
+                      textAlign: TextAlign.center,
+                    ),
+                    onPressed: () async {
+                      const url =
+                          'https://www.meetup.com/pt-BR/FlutterPortugal/';
+                      if (await canLaunch(url)) {
+                        await launch(url);
+                      } else {
+                        throw 'Could not launch $url';
+                      }
+                    },
                   ),
-                  onPressed: () async {
-                    const url = 'https://twitter.com/FlutterPortugal';
-                    if (await canLaunch(url)) {
-                      await launch(url);
-                    } else {
-                      throw 'Could not launch $url';
-                    }
-                  },
-                ),
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Expanded(
-                child: FlatButton(
-                  color: Colors.blue,
-                  textColor: Colors.white,
-                  disabledColor: Colors.grey,
-                  disabledTextColor: Colors.black,
-                  padding: EdgeInsets.all(8.0),
-                  splashColor: Colors.blueAccent,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(15)),
-                  child: Text(
-                    "Join Meetup ",
-                    textAlign: TextAlign.center,
-                  ),
-                  onPressed: () async {
-                    const url = 'https://www.meetup.com/pt-BR/FlutterPortugal/';
-                    if (await canLaunch(url)) {
-                      await launch(url);
-                    } else {
-                      throw 'Could not launch $url';
-                    }
-                  },
                 ),
               ),
             ],
